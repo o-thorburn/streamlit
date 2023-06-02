@@ -1,12 +1,12 @@
 # When you edit this document, it will update the web app at 'https://o-thorburn-streamlit-app-jabojx.streamlit.app' 
-# https://docs.streamlit.io/library/cheatsheet
 
 import streamlit as st
-st.title('My CE App') # Sets the the title of your page
+st.title("My CE App") #sets title of your page
 st.header('Data Visualization Section')  # Sets a header for a section
 st.subheader('Subsection: Pie Chart Analysis')  # Sets a subheader for a subsection
 st.text('This section focuses on data preprocessing.')
 st.markdown('**This is some bold text**')
+
 import pandas as pd
 
 data = {
@@ -25,7 +25,7 @@ if show_df:
     st.write(df)
 
     
-import pandas as pd
+    import pandas as pd
 
 # Creating a pandas DataFrame
 data = {
@@ -34,13 +34,14 @@ data = {
 }
 df = pd.DataFrame(data)
 
-import streamlit as st
+
 
 # Display the DataFrame in Streamlit
 st.dataframe(df)
 
 # Display descriptive statistics of 'ages'
 st.write(df['ages'].describe())
+
 
 # Add 'Adult' column
 df['Adult'] = df['ages'].apply(lambda x: 'Yes' if x >= 18 else 'No')
@@ -49,6 +50,7 @@ df['Adult'] = df['ages'].apply(lambda x: 'Yes' if x >= 18 else 'No')
 st.dataframe(df)
 
 
+#Iris Data set vvv
 import pandas as pd
 from sklearn import datasets
 import matplotlib.pyplot as plt
