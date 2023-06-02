@@ -1,4 +1,4 @@
-# When you edit this document, it will update the web app 
+# When you edit this document, it will update the web app at 'https://o-thorburn-streamlit-app-jabojx.streamlit.app' 
 
 import streamlit as st
 st.title("My CE App") #sets title of your page
