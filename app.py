@@ -34,7 +34,10 @@ data = {
 }
 df = pd.DataFrame(data)
 
-import streamlit as st
+
 
 # Display the DataFrame in Streamlit
 st.dataframe(df)
+
+# Display descriptive statistics of 'ages'
+st.write(df['ages'].describe())
